@@ -16,7 +16,7 @@ public class WhileGaji19{
             System.out.print("Masukkan jumlah jam lembur : ");
             jumlahJamLembur = scan.nextInt();
             i++;
-
+            
             if (jabatan.equalsIgnoreCase("direktur")){
                 continue;
             } else if (jabatan.equalsIgnoreCase("manajer")){
