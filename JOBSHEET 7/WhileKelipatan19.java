@@ -9,6 +9,7 @@ public class WhileKelipatan19 {
         counter = 0;
         System.out.print("Masukkan bilangan kelipatan (1-9) : ");
         kelipatan = scan.nextInt();
+        scan.close();
         while (i <= 50) {
             if (i % kelipatan == 0) {
                 jumlah += i;
