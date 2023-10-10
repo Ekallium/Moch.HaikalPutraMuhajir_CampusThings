@@ -4,7 +4,7 @@ public class ModifikasiWhileGaji19{
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int jumlahKaryawan, jumlahJamLembur;
-        double gajiLembur = 0;
+        double gajiLembur = 0, totalGajiLembur = 0;
         String jabatan;
         System.out.print("Masukkan jumlah karyawan : ");
         jumlahKaryawan = scan.nextInt();
@@ -24,11 +24,16 @@ public class ModifikasiWhileGaji19{
             } else if (jabatan.equalsIgnoreCase("karyawan")){
                 gajiLembur = jumlahJamLembur * 75000;
             } else {
+                System.out.println("Jabatan Invalid !");
                 i--;
+                continue;
             }
-            System.out.println("Total gaji lembur: " + gajiLembur);
+            System.out.println("Gaji lembur: " + gajiLembur);
+            totalGajiLembur += gajiLembur;
             gajiLembur=0;
         } 
+        System.out.println("----------------------------------------------------");
+        System.out.println("Total gaji lembur : " + totalGajiLembur);
         scan.close();
     }
 }
