@@ -16,8 +16,8 @@ public class Bioskop19 {
             System.out.printf("%s \t %s\n", penonton[3][0], penonton[3][1]);
 
         System.out.print("Penonton Pada Baris Ke 3 Adalah : ");
-    for (int i = 0; i < penonton[2].length; i++){
-        System.out.print("| " + penonton[2][i] + " |");
-     }
+    for (String i : penonton[2]){
+        System.out.print("| " + i + " |");
     }
+     }
 }
