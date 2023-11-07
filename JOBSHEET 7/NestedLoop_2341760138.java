@@ -13,6 +13,7 @@ public class NestedLoop_2341760138{
                 total += temps[i][j];
             }
             avg[i] = total / 7; 
+            total = 0;
             System.out.println();
         }
         for(int i = 0; i < temps.length; i++){
