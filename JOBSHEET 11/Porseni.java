@@ -1,10 +1,11 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Porseni {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         //Tempat Penyimpanan Untuk Nama Atlet
-        String[][] atlet = new String[4][5];
+        String[][] atlet = new String[2][5];
         // Keterangan Cabang Olahraga
         String[] cabor = { "Badminton", "Tenis Meja", "Basket", "Bola Voli" };
 
